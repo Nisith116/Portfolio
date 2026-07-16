@@ -1,0 +1,213 @@
+/* Experience Section */
+.experience {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.5) 0%, rgba(30, 41, 59, 0.8) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.experience::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 7s ease-in-out infinite;
+}
+
+.experience.visible {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.5) 0%, rgba(99, 102, 241, 0.1) 100%);
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+  position: relative;
+  padding-left: 100px;
+  animation: slideInLeft 0.6s ease-out both;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(15, 23, 42, 1);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.2);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.7);
+}
+
+.timeline-marker::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.timeline-item:hover .timeline-content {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.2);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  margin: 0;
+}
+
+.experience-duration {
+  color: #9ca3af;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.experience-company {
+  color: #6366f1;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.experience-location {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.experience-achievements {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin: 1rem 0;
+}
+
+.experience-achievements.show {
+  max-height: 500px;
+}
+
+.experience-achievements ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.experience-achievements li {
+  color: #d1d5db;
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.experience-achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #6366f1;
+  font-weight: 700;
+}
+
+.expand-btn {
+  background: transparent;
+  border: 1px solid rgba(99, 102, 241, 0.5);
+  color: #6366f1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.expand-btn:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: #6366f1;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 4rem 1.5rem;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 70px;
+  }
+
+  .timeline-marker {
+    width: 50px;
+    height: 50px;
+    left: -8px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-duration {
+    white-space: normal;
+  }
+}
