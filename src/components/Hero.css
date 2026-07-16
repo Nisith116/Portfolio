@@ -191,8 +191,8 @@
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
   margin: 2rem 0;
   animation: fadeInUp 0.8s ease-out 0.6s both;
 }
@@ -227,6 +227,14 @@
   color: #9ca3af;
   margin-top: 0.5rem;
   font-weight: 500;
+}
+
+.stat-note {
+  display: block;
+  color: #c7d2fe;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
 }
 
 .hero-buttons {

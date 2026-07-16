@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import CountUp from './CountUp';
 
 const Hero = () => {
   // Using a placeholder avatar - replace with your actual profile photo
@@ -54,16 +55,27 @@ const Hero = () => {
 
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-value">9+</span>
+              <CountUp end={9} start={0} suffix="+" duration={800} />
               <span className="stat-label">Years Experience</span>
+              <span className="stat-note">Enterprise React & Angular</span>
             </div>
+
             <div className="stat">
-              <span className="stat-value">50+</span>
-              <span className="stat-label">Projects Delivered</span>
+              <CountUp end={15} start={0} suffix="+" duration={1000} />
+              <span className="stat-label">15+</span>
+              <span className="stat-note">Projects Delivered</span>
             </div>
+
             <div className="stat">
-              <span className="stat-value">92%</span>
+              <CountUp end={92} start={0} suffix="%" duration={1000} />
               <span className="stat-label">Test Coverage</span>
+              <span className="stat-note">Unit & integration tests</span>
+            </div>
+
+            <div className="stat">
+              <CountUp end={275} start={0} suffix="+" duration={1100} />
+              <span className="stat-label">Tickets Resolved</span>
+              <span className="stat-note">Enhancements & production fixes</span>
             </div>
           </div>
 
