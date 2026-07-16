@@ -99,6 +99,12 @@ const Skills = () => {
               </div>
             </div>
             <div className="proficiency-item">
+              <div className="proficiency-label">Angular</div>
+              <div className="proficiency-bar">
+                <div className="proficiency-fill" style={{ width: '88%' }}></div>
+              </div>
+            </div>
+            <div className="proficiency-item">
               <div className="proficiency-label">TypeScript</div>
               <div className="proficiency-bar">
                 <div className="proficiency-fill" style={{ width: '90%' }}></div>
