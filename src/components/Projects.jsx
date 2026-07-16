@@ -125,7 +125,7 @@ const Projects = () => {
               <span className="metric-small">Years of Experience</span>
             </div>
             <div className="metric-block">
-              <span className="metric-big">50+</span>
+              <span className="metric-big">15+</span>
               <span className="metric-small">Projects Delivered</span>
             </div>
             <div className="metric-block">
