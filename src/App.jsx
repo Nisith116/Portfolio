@@ -11,6 +11,7 @@ import Navigation from './components/Navigation';
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [activeRail, setActiveRail] = useState('home');
+  const [activeSocial, setActiveSocial] = useState('');
 
   const railItems = [
     { id: 'home', label: 'Home', icon: '⌂' },
@@ -26,6 +27,16 @@ function App() {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     setActiveRail(sectionId);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setActiveRail('home');
+    setActiveSocial('top');
+  };
+
+  const handleSocialClick = (name) => {
+    setActiveSocial(name);
   };
 
   useEffect(() => {
@@ -72,11 +83,57 @@ function App() {
       </div>
 
       <div className="floating-socials">
-        <button className="social-action" aria-label="Go to top">→</button>
-        <a href="https://www.linkedin.com/in/nisith-mohanty-6210bb123" className="social-action" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-        <a href="mailto:mohantynisith116@gmail.com" className="social-action" aria-label="Email">✉</a>
-        <a href="https://github.com" className="social-action" target="_blank" rel="noreferrer" aria-label="GitHub">◌</a>
-        <a href="https://portfolio-nisith-mohanty.vercel.app" className="social-action" target="_blank" rel="noreferrer" aria-label="Portfolio">◍</a>
+        <button
+          type="button"
+          className={`social-action top-action ${activeSocial === 'top' ? 'active' : ''}`}
+          aria-label="Go to top"
+          data-tooltip="Top"
+          onClick={scrollToTop}
+        >
+          →
+        </button>
+        <a
+          href="https://www.linkedin.com/in/nisith-mohanty-6210bb123"
+          className={`social-action ${activeSocial === 'linkedin' ? 'active' : ''}`}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          data-tooltip="LinkedIn"
+          onClick={() => handleSocialClick('linkedin')}
+        >
+          in
+        </a>
+        <a
+          href="mailto:mohantynisith116@gmail.com"
+          className={`social-action ${activeSocial === 'gmail' ? 'active' : ''}`}
+          aria-label="Gmail"
+          data-tooltip="Gmail"
+          onClick={() => handleSocialClick('gmail')}
+        >
+          ✉
+        </a>
+        <a
+          href="https://github.com/Nisith116"
+          className={`social-action ${activeSocial === 'github' ? 'active' : ''}`}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          data-tooltip="GitHub"
+          onClick={() => handleSocialClick('github')}
+        >
+          ◌
+        </a>
+        <a
+          href="https://portfolio-nisith-mohanty.vercel.app"
+          className={`social-action ${activeSocial === 'portfolio' ? 'active' : ''}`}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Portfolio"
+          data-tooltip="Portfolio"
+          onClick={() => handleSocialClick('portfolio')}
+        >
+          ◍
+        </a>
       </div>
 
       <Navigation scrollPosition={scrollPosition} />

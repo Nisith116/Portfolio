@@ -164,7 +164,7 @@ img {
 
 .floating-socials {
   position: fixed;
-  top: 26px;
+  top: 40px;
   right: 26px;
   display: flex;
   align-items: center;
@@ -173,6 +173,7 @@ img {
 }
 
 .social-action {
+  position: relative;
   width: 38px;
   height: 38px;
   border: 1px solid rgba(167,255,58,0.18);
@@ -183,6 +184,42 @@ img {
   color: var(--text);
   background: rgba(255,255,255,0.03);
   box-shadow: inset 0 0 12px rgba(8, 20, 14, 0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.social-action::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%) translateY(6px);
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(9, 19, 24, 0.96);
+  color: var(--green);
+  border: 1px solid rgba(167,255,58,0.14);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.social-action:hover::before,
+.social-action:focus-visible::before,
+.social-action:focus::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.social-action.active::before,
+.social-action.active:hover::before,
+.social-action.active:focus-visible::before,
+.social-action.active:focus::before {
+  opacity: 0;
+  transform: translateX(-50%) translateY(6px);
 }
 
 .social-action:first-child {
@@ -193,9 +230,11 @@ img {
   font-weight: 700;
 }
 
-.social-action:hover {
+.social-action:hover,
+.social-action:focus-visible {
   transform: translateY(-2px);
   box-shadow: 0 0 20px rgba(167,255,58,0.18);
+  border-color: rgba(167,255,58,0.4);
 }
 
 .container {
