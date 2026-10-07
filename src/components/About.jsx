@@ -27,46 +27,45 @@ const About = () => {
         <div className="about-grid">
           <div className="about-content">
             <p className="about-text">
-              I'm a passionate Senior Frontend Engineer with 9+ years of hands-on experience
-              building scalable, secure, and high-performance enterprise web applications.
-              My expertise spans React.js, Angular, TypeScript, and modern web technologies.
+              Senior Frontend Engineer and Frontend Lead with 10 years of experience building production-grade web applications in JavaScript, TypeScript, and React, much of it in payments and financial services.
             </p>
 
             <p className="about-text">
-              I specialize in translating complex business requirements into elegant,
-              user-centric solutions. I'm obsessed with performance optimization, clean
-              code, and creating exceptional user experiences.
+              I own frontend architecture and delivery for multi-tenant Visa platforms used across 5 regions, define coding standards and reusable component systems, improve Core Web Vitals and page-load performance, and run production monitoring with Sentry, Grafana, and real-user monitoring.
             </p>
 
             <div className="about-highlights">
               <div className="highlight">
                 <span className="highlight-icon">⚡</span>
-                <h3>Performance Focused</h3>
-                <p>Improved page load time by 15% through optimization techniques</p>
+                <h3>Performance Leadership</h3>
+                <p>Improved LCP from 3.2s to 2.1s and INP from 600ms to 250ms on a large sales platform.</p>
               </div>
               <div className="highlight">
                 <span className="highlight-icon">🎨</span>
-                <h3>UI/UX Expert</h3>
-                <p>Improved UI responsiveness by 20% on data-heavy screens</p>
+                <h3>Design System & Architecture</h3>
+                <p>Built reusable component systems and shared Storybook design patterns used across 5 teams.</p>
               </div>
               <div className="highlight">
                 <span className="highlight-icon">🔒</span>
-                <h3>Secure by Design</h3>
-                <p>Implemented enterprise-grade security with JWT, RBAC, and interceptors</p>
+                <h3>Payments & Security</h3>
+                <p>Integrated UPI and net banking payment flows and implemented secure RBAC-enabled access controls.</p>
               </div>
               <div className="highlight">
                 <span className="highlight-icon">🚀</span>
-                <h3>AI-Powered Development</h3>
-                <p>Leveraging GitHub Copilot, Claude, and AI tools for productivity</p>
+                <h3>Team Leadership</h3>
+                <p>Lead 5 engineers and 1 QA, mentor engineers, and drive technical roadmaps in agile delivery teams.</p>
               </div>
             </div>
 
             <div className="about-cta">
               <p>
-                Currently: <strong>Senior Software Engineer at Visa</strong>
+                Currently: <strong>Senior Software Engineer (Frontend Lead) at Visa</strong>
               </p>
               <p>
-                📍 Bengaluru, India | 📧 mohantynisith116@gmail.com
+                📍 Bengaluru, India (open to remote) | 📧 mohantynisith116@gmail.com
+              </p>
+              <p>
+                🎓 Bachelor of Technology, Electrical Engineering — 2012–2016, College of Engineering and Technology, Bhubaneswar
               </p>
             </div>
           </div>

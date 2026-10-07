@@ -22,44 +22,59 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Frontend Frameworks',
-      skills: ['React.js', 'Angular', 'Vite', 'Next.js'],
+      title: 'Frontend',
+      skills: ['JavaScript (ES6+)', 'TypeScript', 'React', 'HTML5', 'CSS3', 'SCSS', 'Next.js', 'Angular', 'CSS Modules', 'Styled Components', 'Tailwind CSS'],
       icon: '⚛️',
     },
     {
-      title: 'Languages',
-      skills: ['TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3/SCSS'],
-      icon: '📝',
-    },
-    {
-      title: 'State Management',
-      skills: ['Redux Toolkit', 'Zustand', 'TanStack Query', 'NgRx', 'RxJS'],
+      title: 'State and APIs',
+      skills: ['Redux Toolkit', 'Zustand', 'TanStack Query', 'RESTful APIs', 'GraphQL', 'Apollo', 'WebSockets'],
       icon: '🔄',
     },
     {
-      title: 'UI Libraries',
-      skills: ['Tailwind CSS', 'Material UI', 'PrimeNG', 'AG Grid'],
-      icon: '🎨',
+      title: 'Architecture',
+      skills: ['Reusable component systems', 'Design systems', 'Storybook', 'Design tokens', 'Micro-frontends', 'Webpack Module Federation', 'single-spa', 'Nx monorepo', 'Webpack', 'Vite'],
+      icon: '🏗️',
     },
     {
       title: 'Performance',
-      skills: ['Code Splitting', 'Lazy Loading', 'Memoization', 'Bundle Optimization'],
+      skills: ['Core Web Vitals', 'LCP', 'INP', 'CLS', 'Page-load optimization', 'Bundle budgets', 'Code splitting', 'Lazy loading', 'Memoization', 'Virtual scrolling', 'Service Worker caching'],
       icon: '⚡',
     },
     {
-      title: 'Testing & Tools',
-      skills: ['Jest', 'Jasmine', 'Karma', 'Git', 'CI/CD'],
+      title: 'Testing',
+      skills: ['Jest', 'React Testing Library', 'Cypress', 'Playwright', 'TDD', 'axe', 'jest-axe'],
       icon: '🧪',
     },
     {
+      title: 'Accessibility & UX',
+      skills: ['WCAG AA', 'Responsive design', 'i18n', 'Figma'],
+      icon: '🎨',
+    },
+    {
+      title: 'Observability and CI/CD',
+      skills: ['Sentry', 'Grafana', 'Prometheus', 'RUM', 'Feature flags', 'A/B experimentation', 'Git', 'Jenkins', 'GitLab CI', 'GitHub Actions', 'Docker', 'Kubernetes', 'AWS', 'Azure', 'GCP'],
+      icon: '📈',
+    },
+    {
       title: 'Security',
-      skills: ['JWT', 'RBAC', 'HTTP Interceptors', 'Secure Cookies'],
+      skills: ['OAuth/SSO', 'JWT', 'RBAC', 'OWASP'],
       icon: '🔒',
     },
     {
-      title: 'AI Tools',
-      skills: ['GitHub Copilot', 'Claude', 'ChatGPT', 'MCP Workflows'],
+      title: 'Backend and Mobile',
+      skills: ['Node.js', 'MongoDB', 'Kafka', 'SQS', 'Redis', 'Elasticsearch', 'React Native'],
+      icon: '🧩',
+    },
+    {
+      title: 'AI',
+      skills: ['LLM features', 'Semantic search', 'MCP tools', 'AI coding assistants'],
       icon: '🤖',
+    },
+    {
+      title: 'Ways of Working',
+      skills: ['Agile/Scrum', 'JIRA', 'Confluence', 'RFCs', 'Architecture decisions', 'Technical roadmaps', 'Code reviews', 'Mentoring'],
+      icon: '🧭',
     },
   ];
 

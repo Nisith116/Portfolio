@@ -44,38 +44,62 @@ const Hero = () => {
             <span className="gradient-text">Nisith Mohanty</span>
           </h1>
           <p className="hero-subtitle">
-            Senior Frontend Engineer | React.js | Angular | TypeScript
+            Senior Frontend Engineer / Frontend Lead | React · TypeScript · Performance
           </p>
 
           <p className="hero-description">
-            Building scalable, high-performance web applications with modern
-            technologies. 9+ years of experience crafting responsive,
-            user-centric enterprise solutions.
+            Senior Frontend Engineer and Frontend Lead with 10 years of experience building production-grade web applications in JavaScript, TypeScript, and React for complex, customer-facing digital products.
           </p>
+
+          <div className="hero-impact">
+            <div className="impact-item">
+              <CountUp end={17} start={0} suffix="%" duration={900} />
+              <span className="impact-label">Faster page load</span>
+              <span className="impact-note">LCP and INP improvements</span>
+            </div>
+
+            <div className="impact-item">
+              <CountUp end={3} start={0} duration={900} />
+              <span className="impact-label">Major platform deliveries</span>
+              <span className="impact-note">Across Visa and enterprise products</span>
+            </div>
+
+            <div className="impact-item">
+              <CountUp end={44} start={0} suffix="%" duration={900} />
+              <span className="impact-label">Fewer pricing errors</span>
+              <span className="impact-note">Better user trust and faster quoting</span>
+            </div>
+
+            <div className="impact-item">
+              <CountUp end={2.5} start={0} suffix="x" duration={900} />
+              <span className="impact-label">Faster quote generation</span>
+              <span className="impact-note">Sales enablement velocity</span>
+            </div>
+          </div>
 
           <div className="hero-stats">
             <div className="stat">
-              <CountUp end={9} start={0} suffix="+" duration={800} />
+              <CountUp end={10} start={0} suffix="+" duration={800} />
               <span className="stat-label">Years Experience</span>
-              <span className="stat-note">Enterprise React & Angular</span>
+              <span className="stat-note">Frontend engineering leadership</span>
             </div>
 
             <div className="stat">
-              <CountUp end={15} start={0} suffix="+" duration={1000} />
-              <span className="stat-label">15+</span>
-              <span className="stat-note">Projects Delivered</span>
+              <CountUp end={5} start={0} duration={1000} />
+              <span className="stat-label">Engineers Led</span>
+              <span className="stat-note">Code reviews, mentoring, delivery</span>
             </div>
 
             <div className="stat">
-              <CountUp end={92} start={0} suffix="%" duration={1000} />
-              <span className="stat-label">Test Coverage</span>
-              <span className="stat-note">Unit & integration tests</span>
+              <CountUp end={5} start={0} duration={1000} />
+              <span className="stat-label">Regions</span>
+              <span className="stat-note">Visa platforms across geographies</span>
             </div>
 
             <div className="stat">
-              <CountUp end={275} start={0} suffix="+" duration={1100} />
-              <span className="stat-label">Tickets Resolved</span>
-              <span className="stat-note">Enhancements & production fixes</span>
+              <CountUp end={10000} start={0} suffix="+" duration={1100} />
+              <span className="stat-label">Proposals</span>
+              <span className="stat-note">Sales enablement workflows</span>
             </div>
           </div>
 
@@ -90,7 +114,7 @@ const Hero = () => {
 
           <div className="social-links">
             <a
-              href="https://linkedin.com/in/nisith-mohanty-6210bb123"
+              href="https://www.linkedin.com/in/nisith-mohanty-6210bb123"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
@@ -101,14 +125,14 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              href="https://github.com"
+              href="https://portfolio-nisith-mohanty.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
-              title="GitHub"
+              title="Portfolio"
             >
               <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <path d="M10 6.5A3.5 3.5 0 0 1 13.5 3h5A3.5 3.5 0 0 1 22 6.5v5A3.5 3.5 0 0 1 18.5 15h-5A3.5 3.5 0 0 1 10 11.5v-5zm-7 8A3.5 3.5 0 0 1 6.5 11h5A3.5 3.5 0 0 1 15 14.5v5A3.5 3.5 0 0 1 11.5 23h-5A3.5 3.5 0 0 1 3 19.5v-5zm11 0A3.5 3.5 0 0 1 17.5 15h5A3.5 3.5 0 0 1 26 18.5v5A3.5 3.5 0 0 1 22.5 27h-5A3.5 3.5 0 0 1 14 23.5v-5z" transform="translate(-2 -2) scale(0.75)" />
               </svg>
             </a>
             <a

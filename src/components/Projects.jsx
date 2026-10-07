@@ -22,69 +22,69 @@ const Projects = () => {
 
   const achievements = [
     {
-      title: 'Performance Optimization',
-      description: 'Reduced page load time by 15% through lazy loading, code splitting, and bundle optimization',
+      title: 'Value Calculator',
+      description: 'Built a pricing and fee-calculation UI for client-facing sales teams that reduced calculation errors by ~44% and made quote generation 2.5x faster.',
       metrics: [
-        '15% faster load times',
-        '25% reduction in bundle size',
-        '20% fewer API calls'
+        'GraphQL + Apollo',
+        'RBAC flows',
+        'Faster quoting'
       ],
-      icon: '⚡',
+      icon: '💰',
       color: 'gradient-1'
     },
     {
-      title: 'UI/UX Responsiveness',
-      description: 'Improved UI responsiveness by 20% on data-heavy screens using virtual scrolling and memoization',
+      title: 'VAS Sales Navigator',
+      description: 'Optimized multi-tenant sales enablement platforms used across 5 Visa regions, improving page load and core web vitals with code splitting, lazy loading, memoization, and virtual scrolling.',
       metrics: [
-        '20% faster interactions',
-        'Smooth 60fps animations',
-        'Optimized rendering'
+        'LCP 3.2s → 2.1s',
+        'INP 600ms → 250ms',
+        'CLS 0.5 → 0.2'
       ],
-      icon: '🎨',
+      icon: '📈',
       color: 'gradient-2'
     },
     {
-      title: 'Enterprise Security',
-      description: 'Implemented comprehensive security flows with JWT, RBAC, and secure session management',
+      title: 'Micro-frontend Architecture',
+      description: 'Led the monolith-to-micro-frontend migration using Webpack Module Federation and aligned teams around a shared architecture roadmap for independent deployments.',
       metrics: [
-        'JWT authentication',
-        'Role-based access control',
-        'HTTP interceptors'
+        'Webpack Module Federation',
+        'Independent deploys',
+        'Architecture design docs'
       ],
-      icon: '🔒',
+      icon: '🏗️',
       color: 'gradient-3'
     },
     {
-      title: 'VAS Sales Navigator',
-      description: 'Built enterprise sales platform helping Visa teams identify value-added services and ROI insights',
+      title: 'Ratecard Platform',
+      description: 'Owned Product Chooser end to end, built a reusable React/TypeScript design system, and improved site performance by ~28% through optimization strategies.',
       metrics: [
-        'React + Redux Toolkit',
-        'Real-time data analysis',
-        'Client-specific insights'
+        'Storybook design system',
+        '28% performance gain',
+        'React Native app'
       ],
-      icon: '💼',
+      icon: '📊',
       color: 'gradient-4'
     },
     {
-      title: 'Ratecard Platform',
-      description: 'Designed and integrated reusable UI library with comprehensive component system',
+      title: 'Payment Integrations',
+      description: 'Integrated UPI and net banking payment flows into Dena Bank’s merchant app, supporting 10,000+ merchants and settlement reporting workflows.',
       metrics: [
-        '25% code reduction',
-        'Reusable components',
-        '92% test coverage'
+        '10,000+ merchants',
+        'UPI + Net banking',
+        'Settlement reports'
       ],
-      icon: '📊',
+      icon: '💳',
       color: 'gradient-5'
     },
     {
-      title: 'Procurement Solutions',
-      description: 'Developed dynamic form components and template-based UI workflows for procurement software',
+      title: 'Quality & Reliability',
+      description: 'Raised test coverage, hardened production monitoring, and shipped feature-flagged releases with measurable reductions in production issues and faster feedback loops.',
       metrics: [
-        'Angular + TypeScript',
-        'Dynamic workflows',
-        'Enterprise integration'
+        '~85% unit coverage',
+        'Sentry + Grafana',
+        '~30% fewer issues'
       ],
-      icon: '🔧',
+      icon: '🔍',
       color: 'gradient-6'
     }
   ];
@@ -121,19 +121,19 @@ const Projects = () => {
           <h3>By The Numbers</h3>
           <div className="metrics-row">
             <div className="metric-block">
-              <span className="metric-big">9+</span>
+              <span className="metric-big">10+</span>
               <span className="metric-small">Years of Experience</span>
             </div>
             <div className="metric-block">
-              <span className="metric-big">15+</span>
-              <span className="metric-small">Projects Delivered</span>
+              <span className="metric-big">5</span>
+              <span className="metric-small">Engineers Led</span>
             </div>
             <div className="metric-block">
-              <span className="metric-big">275+</span>
-              <span className="metric-small">Tickets Resolved</span>
+              <span className="metric-big">260+</span>
+              <span className="metric-small">Production Issues Resolved</span>
             </div>
             <div className="metric-block">
-              <span className="metric-big">92%</span>
+              <span className="metric-big">90%</span>
               <span className="metric-small">Test Coverage</span>
             </div>
           </div>
